@@ -1,90 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manpower-Names</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .button-container {
-            display: flex;
-            gap: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-        }
-        button.print {
-            background-color: #008CBA;
-        }
-        button.whatsapp {
-            background-color: #25D366;
-        }
-    </style>
+    <title>Email Content</title>
 </head>
-<body>
-    <header>
-        <div id="current-time"></div>
-        <div class="button-container">
-            <button class="print" onclick="window.print()">Print</button>
-            <button class="whatsapp" onclick="sendWhatsApp()">Send via WhatsApp</button>
-        </div>
-    </header>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
 
-    <h2>Manpower Report</h2>
-    <img src="1.jpg" alt="Manpower Report">
+    <!-- النص باللغة الهولندية (الأصل) -->
+    <div lang="nl" dir="ltr" style="margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 20px;">
+        <p>Dag Samer</p>
+        <p>Blijkbaar staat jouw adres nog steeds niet gedomicilieerd op de Marktstraat 43, 8530 Harelbeke sedert de afvoering van ambtswege op 22/6/2026[span_0](start_span)[span_0](end_span). Aangezien dit niet binnen de 3 maanden terug in orde werd gebracht zal je het moment dat je daar effectief ingeschreven staat een nieuwe PTL-verklaring moeten invullen[span_1](start_span)[span_1](end_span). We moeten dus jouw officieel domicilieadres afwachten om dit te regelen[span_2](start_span)[span_2](end_span).</p>
+        <p>Met vriendelijke groeten</p>
+        <p>
+            <strong style="color: #a8004c;">Catherine</strong><br>
+            <strong>Ziekenfondsconsulent</strong>
+        </p>
+        <p><strong>Contactcenter</strong></p>
+    </div>
 
-    <h2>Manpower Report</h2>
-    <img src="2.jpg" alt="Manpower Report">
+    <!-- الترجمة باللغة العربية -->
+    <div lang="ar" dir="rtl">
+        <p>مرحباً سامر،</p>
+        <p>يبدو أن عنوانك لا يزال غير مسجل رسمياً في Marktstraat 43, 8530 Harelbeke منذ الإلغاء الإداري في 22/6/2026[span_3](start_span)[span_3](end_span). وبما أنه لم يتم تصحيح هذا الأمر خلال مدة 3 أشهر، يتوجب عليك تعبئة تصريح PTL جديد فور تسجيلك الفعلي هناك[span_4](start_span)[span_4](end_span). لذلك، يجب علينا انتظار عنوان إقامتك الرسمي لترتيب هذا الأمر[span_5](start_span)[span_5](end_span).</p>
+        <p>مع خالص التحيات،</p>
+        <p>
+            <strong style="color: #a8004c;">كاثرين</strong><br>
+            <strong>مستشارة التأمين الصحي</strong>
+        </p>
+        <p><strong>مركز الاتصال</strong></p>
+    </div>
 
-
-    <h2>Manpower Report</h2>
-    <img src="3.jpg" alt="Manpower Report">
-    <script>
-        // Function to update current time and date
-        function updateTime() {
-            const now = new Date();
-            const options = {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-            };
-            document.getElementById('current-time').innerText = now.toLocaleDateString('en-US', options);
-        }
-        
-        // Update time every second
-        setInterval(updateTime, 1000);
-        updateTime();
-
-        // Function to send the image via WhatsApp
-        function sendWhatsApp() {
-            const url = "https://wa.me/?text=" + encodeURIComponent("Check out this report") + " " + window.location.href;
-            window.open(url, '_blank');
-        }
-    </script>
 </body>
 </html>
